@@ -10,8 +10,17 @@
 
   width: 100vw;
   height: 100vh;
-  background-color: $cream;
+  background-color: $dark-blue;
   display:grid;
   grid-template-rows: 10% 70% 20% ;
+
+  .main {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+  }
 
 }

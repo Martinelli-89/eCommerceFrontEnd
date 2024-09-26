@@ -1,0 +1,46 @@
+@use "../../Styles/Color.scss" as *;
+@use "../../Styles/Fonts.scss" as *;
+.LandingPageCard {
+
+    width: 45%;
+    height: 80%;
+    background-color: $midnight-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom, $dark-blue, $midnight-blue, $blue-grey, $misty-blue, $dark-blue);
+    border-radius: 15px;
+    
+    .CardImage {
+
+        height: auto;
+        width: 120%;
+
+    }
+
+    .CardImageHor {
+        height: auto;
+        width: 120%;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    }
+
+    .button {
+
+        width: 85%;
+        height: 10%;
+        border-radius: 18px;
+        font: 1em $main;
+        color: $dark-blue;
+        background-color: $misty-blue;;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
