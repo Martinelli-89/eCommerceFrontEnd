@@ -1,0 +1,17 @@
+@use "./Styles/Color.scss" as *;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.App {
+
+  width: 100vw;
+  height: 100vh;
+  background-color: $cream;
+  display:grid;
+  grid-template-rows: 10% 70% 20% ;
+
+}
