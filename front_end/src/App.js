@@ -1,13 +1,15 @@
 import './App.scss';
+import imgCard from "../src/assets/manCardBackground.jpg";
+import LandingPageCard from "../Components/LandingPageCard/LandingPageCard";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <div className="nav">
         Nav goes here, logo on the left, basket on the right
       </div>
       <div className="main">
-        Main content here
+        <LandingPageCard text="For Him" image={imgCard}/>
       </div>
       <div className="footer">
         Footer with company info
