@@ -1,21 +1,23 @@
-import './App.scss';
-import imgCardHim from "../src/assets/manCardNoBackground.png";
-import imgCardHer from "../src/assets/womanCardNoBackground.png";
-import LandingPageCard from "./Components/LandingPageCard/LandingPageCard.js";
+import logo from './logo.svg';
+import './App.css';
 
-const App = () => {
+function App() {
   return (
     <div className="App">
-      <div className="nav">
-        Nav goes here, logo on the left, basket on the right
-      </div>
-      <div className="main">
-        <LandingPageCard buttonText="FOR HIM" image={imgCardHim} rotate={true}/>
-        <LandingPageCard buttonText="FOR HER" image={imgCardHim} rotate={false}/>
-      </div>
-      <div className="footer">
-        Footer with company info
-      </div>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
