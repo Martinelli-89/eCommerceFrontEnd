@@ -25,6 +25,17 @@
   }
 
   .main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &__background {
+      width: 98%;
+      height: auto;
+      justify-self: center;
+    }
     
   }
 
