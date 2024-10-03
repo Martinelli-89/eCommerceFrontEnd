@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Cinzel";
+    src: url(../Fonts/Cinzel-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "FaunaOne";
+    src: url(../Fonts/FaunaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Italiana";
+    src: url(../Fonts/Italiana-Regular.ttf);
+}
+
+$brand: Italiana;
+$titles: Cinzel;
+$text: FaunaOne;

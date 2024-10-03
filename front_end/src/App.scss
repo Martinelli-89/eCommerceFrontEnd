@@ -1,7 +1,21 @@
+@use "../src/Assets/Fonts/Fonts.scss" as *;
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+.brand {
+  font-family: $brand;
+}
+
+.titles {
+  font-family: $titles;
+}
+
+.text {
+  font-family: $text;
 }
 
 .App {
@@ -9,26 +23,14 @@
   height: 100vh;
   display: grid;
   grid-template-rows: 10% 75% 15%;
-
-  .header {
-    display: grid;
-    grid-template-columns: 15% 15% 40% 15% 15% ;
-    grid-template-rows: 100%;
-    justify-items: center;
-    align-items: center;
-
-    img {
-      height: 40%;
-      width: auto;
-    }
-
-  }
+  background-color: #A45C40;
+  color: #E4DDCA;
 
   .main {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     
     &__background {
@@ -40,7 +42,7 @@
   }
 
   .footer {
-    
+      color:red;
   }
 
 }

@@ -1,0 +1,25 @@
+.main__background {
+
+    border-radius: 5px;
+
+}
+
+.main__clothesSections{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .himButton, .herButton {
+
+        border-radius: 10px;
+        width: 35%;
+        height: auto;
+        background-color: #C38370;
+
+    }
+
+
+}
