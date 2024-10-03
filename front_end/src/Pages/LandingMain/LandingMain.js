@@ -1,4 +1,5 @@
 import "./LandingMain.scss";
+import { Link } from "react-router-dom";
 import background from "../../Assets/Images/mainPagePhoto.jpg";
 import Button from "../../Components/Button/Button.js";
 
@@ -12,10 +13,14 @@ const LandingMain = () => {
             <h3 className="text">SINCE 2024</h3>
             <div className="main__clothesSections">
                 <div className="himButton titles">
-                    <Button text="FOR HER" handle="Her section"/>
+                    <Link to="*/forHer" style={{ textDecoration: 'none', color:'inherit' }}>
+                        <Button text="FOR HER"/>
+                    </Link>
                 </div>
                 <div className="herButton titles">
-                    <Button text="FOR HIM" handle="His section"/>
+                    <Link to="*/forHim" style={{ textDecoration: 'none',  color:'inherit' }}>
+                        <Button text="FOR HIM"/>
+                    </Link>
                 </div>
             </div>
         </>
