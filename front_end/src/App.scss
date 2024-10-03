@@ -22,7 +22,7 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: 10% 75% 15%;
+  grid-template-rows: 10% 80% 10%;
   background-color: #A45C40;
   color: #E4DDCA;
 
@@ -42,8 +42,10 @@
   }
 
   .footer {
-      color:red;
-      background-color: #c38370;
-  }
+    background-color: #c38370;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 
 }

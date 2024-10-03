@@ -2,6 +2,7 @@ import './App.scss';
 import { Route, Routes } from "react-router-dom";
 import LandingMain from './Pages/LandingMain/LandingMain';
 import Nav from "../src/Components/Nav/Nav";
+import Footer from "../src/Components/Footer/Footer";
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
               <LandingMain />
             </section>
             <section className='footer'>
-              Footer here
+              <Footer />
             </section>
           </div>
         }>
@@ -29,7 +30,7 @@ const App = () => {
               <h1>FOR HER</h1>
             </section>
             <section className='footer'>
-              Footer here
+              <Footer />
             </section>
           </div>
         }>
@@ -43,7 +44,7 @@ const App = () => {
               <h1>FOR HIM</h1>
             </section>
             <section className='footer'>
-              Footer here
+              <Footer />
             </section>
           </div>
         }>
