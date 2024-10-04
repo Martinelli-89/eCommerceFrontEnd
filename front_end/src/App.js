@@ -4,7 +4,7 @@ import {React, useState, useEffect} from "react";
 import LandingMain from './Pages/LandingMain/LandingMain';
 import Nav from "../src/Components/Nav/Nav";
 import Footer from "../src/Components/Footer/Footer";
-import ItemCard from './Components/ItemCard/ItemCard';
+import ItemDisplayer from './Pages/ItemDisplayer/ItemDisplayer';
 
 const App = () => {
 
@@ -67,7 +67,7 @@ const App = () => {
           <div className="App">
             <Nav />
             <section className='main'>
-              <ItemCard />
+              <ItemDisplayer windowWidth={windowSize.innerWidth} />
             </section>
             <section className='footer'>
               <Footer />

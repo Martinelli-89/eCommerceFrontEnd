@@ -1,14 +1,12 @@
 .ItemCard {
 
-    width: 200px;
-    height: 235px;
     display: grid;
     grid-template-columns: 85% 15%;
     grid-template-rows: 85% 15%;
     grid-template-areas: 
         "itemPicture itemPicture"
         "itemDescription itemPrice";
-    position: absolute;
+    position: relative;
 
     &__wrapper {
 
@@ -22,8 +20,8 @@
         }
 
         .item {
-            width: auto;
-            height: 100%;
+            width: 100%;
+            height: auto;
             z-index: 1;
         }
 
@@ -31,8 +29,6 @@
             width: 20px;
             height: auto;
             z-index: 2;
-            left: 170px;
-            bottom: 195px;
         }
 
     }
