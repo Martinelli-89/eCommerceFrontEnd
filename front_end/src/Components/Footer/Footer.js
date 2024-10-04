@@ -8,8 +8,12 @@ const Footer= () => {
         <div className='footerMenu'>
             <p className='text'>About us</p>
             <div className='footerMenu__socials'>
-                <img className='footerMenu__instagram' src={instagram} alt="instagram" />
-                <img className='footerMenu__facebook' src={facebook} alt="facebook" />
+                <a href='http://www.instagram.com' target="_blank">
+                    <img className='footerMenu__instagram' src={instagram} alt="instagram"  />
+                </a>
+                <a href="http://www.facebook.com" target="_blank">
+                    <img className='footerMenu__facebook' src={facebook} alt="facebook" />
+                </a>
             </div>
             <p className='text'>Help</p>
         </div>
