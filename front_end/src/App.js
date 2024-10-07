@@ -12,7 +12,7 @@ const App = () => {
     const {innerWidth, innerHeight} = window;
     return {innerWidth, innerHeight};
   }
-  
+
   const [windowSize, setWindowSize] = useState(getWindowSize());
   
   useEffect(()=> {

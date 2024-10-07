@@ -1,12 +1,10 @@
 import './ItemCard.scss';
-import jumper from "../../Assets/Images/Jumper.png"
 import basket from "../../Assets/Images/bagIcon.svg"
 
-const ItemCard = ({cardSize}) => {
+const ItemCard = ({cardSize, picture, price, description, name}) => {
 
     const widthToPixel =  cardSize+"px";
     const heightToPixel = cardSize*1.2+"px";
-    console.log(heightToPixel);
 
     const divStyle = {
         width: widthToPixel,
@@ -26,11 +24,11 @@ const ItemCard = ({cardSize}) => {
             style={divStyle}   
         >
             <div className="ItemCard__wrapper">
-                <img className="item" src={jumper} alt="yelloish jumper" />
+                <img className="item" src={picture} alt={description} />
                 <img className="addToBasket" src={basket} alt="add item to basket" style={shiftBasket}   />
             </div>
-            <p className="ItemCard__description">Descrizione</p>
-            <p className="ItemCard__price">10.7</p>
+            <p className="ItemCard__description">{name}</p>
+            <p className="ItemCard__price">{price}</p>
         </section>
     );
 }
