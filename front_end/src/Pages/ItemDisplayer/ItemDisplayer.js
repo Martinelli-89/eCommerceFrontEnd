@@ -1,5 +1,6 @@
 import './ItemDisplayer.scss';
 import ItemCard from '../../Components/ItemCard/ItemCard';
+import ClothesSectionsScroller from '../../Components/ClothesSectionsScroller/ClothesSectionsScroller';
 
 const ItemDisplayer = ({windowWidth}) => {
 
@@ -10,18 +11,26 @@ const ItemDisplayer = ({windowWidth}) => {
 
     }
 
+    const mockSectionData = ["SHOES", "TROUSERS", "SHIRTS", "JACKETS","ACCESSORIES", "HOODIES"]
+
     return (
         <div className="ItemDisplayer">
-            <ItemCard cardSize={calculateCardSize(windowWidth)} />
-            <ItemCard cardSize={calculateCardSize(windowWidth)} />
-            <ItemCard cardSize={calculateCardSize(windowWidth)} />
-            <ItemCard cardSize={calculateCardSize(windowWidth)} />
-            <ItemCard cardSize={calculateCardSize(windowWidth)} />
-            <ItemCard cardSize={calculateCardSize(windowWidth)} />
-            <ItemCard cardSize={calculateCardSize(windowWidth)} />
-            <ItemCard cardSize={calculateCardSize(windowWidth)} />
-            <ItemCard cardSize={calculateCardSize(windowWidth)} />
+            <div className="ItemDisplayer__cards">
+                <ItemCard cardSize={calculateCardSize(windowWidth)} />
+                <ItemCard cardSize={calculateCardSize(windowWidth)} />
+                <ItemCard cardSize={calculateCardSize(windowWidth)} />
+                <ItemCard cardSize={calculateCardSize(windowWidth)} />
+                <ItemCard cardSize={calculateCardSize(windowWidth)} />
+                <ItemCard cardSize={calculateCardSize(windowWidth)} />
+                <ItemCard cardSize={calculateCardSize(windowWidth)} />
+                <ItemCard cardSize={calculateCardSize(windowWidth)} />
+                <ItemCard cardSize={calculateCardSize(windowWidth)} />
+            </div>
+            <div className="ItemDisplayer__sections" >
+                <ClothesSectionsScroller clothesSections={mockSectionData} />
+            </div>
         </div>
+
     );
 }
 

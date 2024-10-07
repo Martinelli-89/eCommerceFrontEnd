@@ -1,0 +1,27 @@
+.ClothesSectionsScroller {
+
+    height: 100%;
+    min-width: 200%;
+    background-color: #a45c40;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    .section {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+        width: fit-content;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 15px;
+        background-color: #e4b7a0;
+        color: #a45c40;
+    }
+
+}
