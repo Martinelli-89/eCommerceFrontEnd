@@ -372,7 +372,76 @@ const Data = [
             "large": "5"
         }
 
+    },
+    {
+        ID:23,
+        gender:"male",
+        new: false,
+        name:"Raincoat",
+        description:"Blue raincoat",
+        price:21.99,
+        section:"jacket",
+        color:"blue",
+        imageLink:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bb1b0302-644f-470e-9de0-ebaf605ec4b9/LFC+M+NSW+CLUB+PANT+CF+FT+3R.png",
+        size: {
+            "small": "5",
+            "medium": "5",
+            "large": "5"
+        }
+
+    },
+    {
+        ID:24,
+        gender:"male",
+        new: true,
+        name:"Puffer jacket",
+        description:"Green puffer jacket",
+        price:41.99,
+        section:"jacket",
+        color:"green",
+        imageLink:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7b660b77-bfd0-4e7e-9e30-101cf62daac4/M+J+ESS+STMT+ECO+PUFFER.png",
+        size: {
+            "small": "5",
+            "medium": "5",
+            "large": "5"
+        }
+
+    },
+    {
+        ID:25,
+        gender:"male",
+        new: true,
+        name:"Sneakers",
+        description:"Black and white sneakers",
+        price:31.99,
+        section:"shoes",
+        color:"black",
+        imageLink:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fd17b420-b388-4c8a-aaaa-e0a98ddf175f/NIKE+DUNK+HI+RETRO.png",
+        size: {
+            "small": "5",
+            "medium": "5",
+            "large": "5"
+        }
+
+    },
+    {
+        ID:26,
+        gender:"male",
+        new: true,
+        name:"Red hat",
+        description:"Red hat",
+        price:11.99,
+        section:"accessories",
+        color:"red",
+        imageLink:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4080064d-bd93-4ac1-99c1-264ee3feab09/J+RISE+CAP+S+CB+MTL+JM.png",
+        size: {
+            "small": "5",
+            "medium": "5",
+            "large": "5"
+        }
+
     }
+    
     
 ];
 

@@ -1,9 +1,9 @@
 import './Button.scss';
 
-const Button = ({text}) => {
+const Button = ({text, handleClick}) => {
 
     return (
-        <div className="Button">
+        <div className="Button" onClick={handleClick? handleClick : undefined}>
             {text}
         </div>
     );
