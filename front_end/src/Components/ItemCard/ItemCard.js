@@ -1,7 +1,7 @@
 import './ItemCard.scss';
 import basket from "../../Assets/Images/bagIcon.svg"
 
-const ItemCard = ({cardSize, picture, price, description, name}) => {
+const ItemCard = ({cardSize, picture, price, description, name, itemData, handleViewItem}) => {
 
     const widthToPixel =  cardSize+"px";
     const heightToPixel = cardSize*1.2+"px";
@@ -24,7 +24,7 @@ const ItemCard = ({cardSize, picture, price, description, name}) => {
             style={divStyle}   
         >
             <div className="ItemCard__wrapper">
-                <img className="item" src={picture} alt={description} />
+                <img className="item" src={picture} alt={description} onClick={() =>handleViewItem(itemData)} />
                 <img className="addToBasket" src={basket} alt="add item to basket" style={shiftBasket}   />
             </div>
             <p className="ItemCard__description">{name}</p>

@@ -1,10 +1,10 @@
 import './Button.scss';
 
-const Button = ({text, handleClick}) => {
+const Button = ({text, handleClick, image}) => {
 
     return (
         <div className="Button" onClick={handleClick? handleClick : undefined}>
-            {text}
+            {text? text : <img src={image} />}
         </div>
     );
 }

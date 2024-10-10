@@ -1,0 +1,59 @@
+.SelectedItemCard {
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 12% 76% 12%;
+    grid-template-rows: 8% 12% 40% 10% 15% 15%;
+    grid-template-areas: 
+     ". . close"
+     ". title ."
+     ". photo ."
+     ". description ."
+     "size size size"
+     "basket basket basket";
+
+    &__closeCard {
+        grid-area: close;
+        width: 100%;
+        height: auto;
+     }
+
+    &__name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: title;
+     }
+
+    &__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: description;
+     }
+
+    &__pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        grid-area: photo;
+     }
+
+    &__sizes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: size;
+     }
+
+    &__basket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: basket;
+     }
+
+}
