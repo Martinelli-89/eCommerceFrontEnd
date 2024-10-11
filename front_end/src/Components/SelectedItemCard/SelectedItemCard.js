@@ -13,10 +13,16 @@ const SelectedItemCard = ({itemData, handleCloseCard}) => {
             <p className="SelectedItemCard__description">{itemData.description}</p>
             <img className="SelectedItemCard__pic" src={itemData.imageLink} /> 
             <div className="SelectedItemCard__sizes">
-            {Object.keys(itemData.size).map(([key, value]) => <Button text={key.toUpperCase()} /> )}
+                SIZES: 
+                {Object.keys(itemData.size).map(([key, value]) =>  { 
+                    return (
+                    <div className="sizesWrapper">
+                        <Button text={key.toUpperCase()} /> 
+                    </div> );
+                } )}
             </div>
             <div className="SelectedItemCard__basket">
-                <Button text={"basket"} />
+                <Button text={"ADD TO BASKET"} />
             </div>
         </section>
     );

@@ -4,7 +4,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 12% 76% 12%;
-    grid-template-rows: 8% 12% 40% 10% 15% 15%;
+    grid-template-rows: 8% 5% 50% 15% 10% 12%;
     grid-template-areas: 
      ". . close"
      ". title ."
@@ -35,23 +35,36 @@
 
     &__pic {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
+        justify-self: center;
+        width: auto;
+        height: 100%;
         grid-area: photo;
      }
 
     &__sizes {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         grid-area: size;
+
+        .sizesWrapper {
+            width: 12%;
+            background-color: #e4b7a0;
+            color:#a45c40;
+            border-radius: 25px;
+        }
+
      }
 
     &__basket {
-        display: flex;
-        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        width: 55%;
+        height: 55%;
+        background-color: #e4b7a0;
+        color:#a45c40;
+        border-radius: 25px;
         align-items: center;
         grid-area: basket;
      }
